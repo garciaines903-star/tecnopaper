@@ -33,3 +33,24 @@ Tecnopaper/
         ├── header.html
         ├── navbar.html
         └── footer.html
+
+Instrucciones de Instalación y Ejecución
+
+Sigue estos pasos para desplegar la aplicación localmente en tu equipo:
+
+### 1. Clonar o Descargar el Proyecto
+Si usas Git, clona este repositorio desde la terminal:
+```bash
+git clone [https://github.com/garciaines903-star/tecnopaper.git](https://github.com/garciaines903-star/tecnopaper.git)
+cd tecnopaper
+Si descargaste el proyecto en archivo ZIP, descomprímelo en tu equipo y abre la carpeta en la terminal o consola
+Instalar el Framework Flask
+pip install flask
+Ejecutar la Aplicación
+Inicia el servidor local de desarrollo ejecutando el archivo principal:
+python app.py
+Abrir en el Navegador
+Abre tu navegador de preferencia e ingresa a la dirección IP local:
+[http://127.0.0.1:5000/](http://127.0.0.1:5000/)
+
+
