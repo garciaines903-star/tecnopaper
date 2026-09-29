@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Tecnopaper{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    {# Inclusión del menú de navegación #}
+    {% include "includes/navbar.html" %}
+
+    {# Inclusión del encabezado #}
+    {% include "includes/header.html" %}
+
+    {# Bloque donde se inserta el contenido dinámico #}
+    <main class="main-content container">
+        {% block content %}{% endblock %}
+    </main>
+
+    {# Inclusión del pie de página #}
+    {% include "includes/footer.html" %}
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

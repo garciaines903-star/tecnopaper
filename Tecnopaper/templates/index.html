@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio - Tecnopaper{% endblock %}
+
+{% block content %}
+<section class="card">
+    <h2>Bienvenido a Tecnopaper</h2>
+    <p>Somos tu solución integral en papelería, útiles escolares, tarjetería y asesoría técnica en sistemas e informática.</p>
+    
+    <div class="features-grid">
+        <div class="feature-item">
+            <img src="{{ url_for('static', filename='img/portadas.jpg') }}" alt="Papelería y Diseño" class="feature-img">
+            <h3>🎨 Papelería y Diseño</h3>
+            <p>Suministros de oficina, decoración, portadas para cuadernos y letras personalizadas estilo Timoteo.</p>
+        </div>
+        <div class="feature-item">
+            <img src="{{ url_for('static', filename='img/impresiones.jpg') }}" alt="Soluciones de TI" class="feature-img">
+            <h3>💻 Soluciones de TI</h3>
+            <p>Mantenimiento de computadores, impresiones, digitalización de documentos y soporte técnico.</p>
+        </div>
+        <div class="feature-item">
+            <img src="{{ url_for('static', filename='img/carteleras.jpg') }}" alt="Detalles Especiales" class="feature-img">
+            <h3>🎁 Detalles Especiales</h3>
+            <p>Diseño de empaques, tarjetas creativas y regalos de temporada para fechas especiales.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
